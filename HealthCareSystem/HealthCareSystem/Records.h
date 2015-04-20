@@ -11,9 +11,9 @@ class Records
 {
 public:
 	Records(); //CTOR
-	std::queue<Patient> getPatients();
-	std::queue<Doctor> getDoctors();
-	std::queue<SurveyResults> getActiveSurveys();
+	std::vector<Patient> getPatients();
+	std::vector<Doctor> getDoctors();
+	std::vector<SurveyResults> getActiveSurveys();
 	bool addPatient(Patient);
 	bool addDoctor(Doctor);
 	bool addSurvey(SurveyResults);
@@ -21,12 +21,12 @@ public:
 	bool removeDoctor(Doctor);
 	bool removeSurvey(SurveyResults);
 	Account search(std::string firstName, std::string lastName);
-	Account search(std::string username);
+	Account search(std::string email);
 protected:
 private:
-	std::queue<Patient> patientRecords;
-	std::queue<Doctor> doctorRecords;
-	std::queue<SurveyResults> activeSurveys;
+	std::vector<Patient> patientRecords;
+	std::vector<Doctor> doctorRecords;
+	std::vector<SurveyResults> activeSurveys;
 };
 
 

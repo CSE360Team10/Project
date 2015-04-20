@@ -8,7 +8,7 @@ const int numOfQuestions = 9;
 class SurveyResults
 {
 	public:
-		SurveyResults(); //CTOR
+		SurveyResults(int[numOfQuestions], std::string, std::string);
 		int	*getQuestionResponses();
 		std::string getNotesToDoctor();
 		float getAverageScore();

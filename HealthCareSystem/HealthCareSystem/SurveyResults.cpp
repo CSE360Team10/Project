@@ -1,7 +1,12 @@
 #include "SurveyResults.h"
 
-SurveyResults::SurveyResults(){
-	//ctor
+SurveyResults::SurveyResults(int qResponses[numOfQuestions], std::string notes, std::string date){
+	for (int i = 0; i < numOfQuestions; i++){
+		questionResponses[i] = qResponses[i];
+	}
+	notesToDoctor = notes;
+	dateTaken = date;
+	computeAverage();
 }
 
 int * SurveyResults::getQuestionResponses(){
@@ -21,5 +26,9 @@ std::string SurveyResults::getDateTaken(){
 }
 
 void SurveyResults::computeAverage(){
-
+	averageScore = 0;
+	for (int i = 0; i < numOfQuestions; i++){
+		averageScore += questionResponses[i];
+	}
+	averageScore /= (float)numOfQuestions;
 }
