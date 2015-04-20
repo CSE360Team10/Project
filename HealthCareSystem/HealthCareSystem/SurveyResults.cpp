@@ -1,60 +1,25 @@
 #include "SurveyResults.h"
 
-
-
 SurveyResults::SurveyResults(){
-	//CTOR
+	//ctor
 }
 
-std::queue<Patient> SurveyResults::getPatients(){
-	return patientRecords;
+int * SurveyResults::getQuestionResponses(){
+	return questionResponses;
 }
 
-
-std::queue<Doctor> SurveyResults::getDoctors(){
-	return doctorRecords;
+std::string SurveyResults::getNotesToDoctor(){
+	return notesToDoctor;
 }
 
-std::queue<SurveyResults> SurveyResults::getActiveSurveys(){
-	return activeSurveys;
+float SurveyResults::getAverageScore(){
+	return averageScore;
 }
 
-bool SurveyResults::addPatient(Patient patient){
-	//todo
-	return 1;
+std::string SurveyResults::getDateTaken(){
+	return dateTaken;
 }
 
-bool SurveyResults::addPatient(Doctor doctor){
-	//todo
-	return 1;
-}
+void SurveyResults::computeAverage(){
 
-bool SurveyResults::addSurvey(SurveyResults survey){
-	//todo
-	return 1;
-}
-
-bool SurveyResults::removePatient(Patient patient){
-	//todo
-	return 1;
-}
-
-bool SurveyResults::removePatient(Doctor doctor){
-	//todo
-	return 1;
-}
-
-bool SurveyResults::removeSurvey(SurveyResults survey){
-	//todo
-	return 1;
-}
-
-Account search(std::string firstName, std::string lastName){
-	//TODO
-	return NULL;
-}
-
-Account search(std::string fusername){
-	//TODO
-	return NULL;
 }
