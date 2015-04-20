@@ -8,7 +8,9 @@ class Doctor: public Account
 {
 	public:
 		Doctor(); //CTOR
+
 	protected:
+
 	private:
 };
 
