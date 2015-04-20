@@ -10,18 +10,18 @@ class Account
 		Account(); //CTOR
 		std::string getFirstName();
 		std::string getLastName();
-		int getBirthday();
+		std::string getBirthday();
 		std::string getEmail();
 		std::string getPassword();
 		int getRecoveryQuestion();
 		int getRecoveryAnswer();
-		std::string setFirstName(std::string);
-		std::string setLastName(std::string);
-		int setBirthday(std::string);
+		void setFirstName(std::string);
+		void setLastName(std::string);
+		void setBirthday(std::string);
 		void setEmail(std::string);
 		void setPassword(std::string);
-		void setRecoveryQuestion(std::string);
-		void setRecoveryAnswer(std::string);
+		void setRecoveryQuestion(int);
+		void setRecoveryAnswer(int);
 
 	private:
 		std::string firstName;
