@@ -3,6 +3,17 @@
 
 #include "Account.h"
 
+Account::Account()
+{
+	firstName = "";
+	lastName = "";
+	birthday = "";
+	email = "";
+	password = "";
+	recoveryQuestion = -1;
+	recoveryAnswer = -1;
+}
+
 std::string Account::getFirstName() { return firstName; }
 
 std::string Account::getLastName() { return lastName; }
