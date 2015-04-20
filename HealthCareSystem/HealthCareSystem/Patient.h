@@ -8,23 +8,22 @@
 class Patient: public Account
 {
 	public:
-		Patient(std::string, std::string, int, std::queue<std::string>); //CTOR
+		Patient(std::string, std::string, std::vector<std::string>); //CTOR
 		int getWeight();
 		int getHeight();
 		int getAge();
-		std::queue<std::string> getMedConditions();
+		std::vector<std::string> getMedConditions();
 		int setWeight(int);
 		int setHeight(int);
-		std::queue<std::string> setMedConditions(std::queue<std::string>);
-		std::queue<SurveyResults> setResponses(int*, std::string);
-		SurveyResults takeSurvey();
-		std::queue<SurveyResults> getResults();
+		std::vector<std::string> setMedConditions(std::vector<std::string>);
+		void setResponses(int*, std::string, std::string);
+		std::vector<SurveyResults> getResults();
 
 	private:
 		float weight;
 		float height;
-		std::queue<std::string> medConditions;
-		std::queue<SurveyResults> responses;
+		std::vector<std::string> medConditions;
+		std::vector<SurveyResults> responses;
 };
 
 #endif 
