@@ -41,6 +41,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Derek\Documents\c++ work\boost_1_57_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -84,6 +85,7 @@
     <ClInclude Include="Account.h" />
     <ClInclude Include="Doctor.h" />
     <ClInclude Include="Patient.h" />
+    <ClInclude Include="FileIO.h" />
     <ClInclude Include="Records.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="SurveyResults.h" />
@@ -94,6 +96,7 @@
     <ClCompile Include="Doctor.cpp" />
     <ClCompile Include="HealthCareSystem.cpp" />
     <ClCompile Include="Patient.cpp" />
+    <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="Records.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="SurveyResults.cpp" />

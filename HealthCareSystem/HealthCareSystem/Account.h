@@ -2,7 +2,6 @@
 #define ACCOUNT_H
 
 #include "stdafx.h"
-#include "Account.h"
 
 class Account
 {
