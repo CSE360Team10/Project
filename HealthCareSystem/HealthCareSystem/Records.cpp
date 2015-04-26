@@ -35,7 +35,7 @@ bool Records::addSurvey(SurveyResults survey){
 bool Records::removePatient(Patient patient){
 	for (int i = 0; i < patientRecords.size(); i++){
 		if (patient.getEmail().compare(patientRecords[i].getEmail()) == 0){
-			patientRecords.erase[patientRecords.begin() + i];
+			patientRecords.erase(patientRecords.begin() + i);
 			return 1;
 		}
 	}
@@ -46,7 +46,7 @@ bool Records::removeDoctor(Doctor doctor){
 	//todo
 	for (int i = 0; i < doctorRecords.size(); i++){
 		if (doctor.getEmail().compare(doctorRecords[i].getEmail()) == 0){
-			doctorRecords.erase[doctorRecords.begin() + i];
+			doctorRecords.erase(doctorRecords.begin() + i);
 			return 1;
 		}
 	}
@@ -56,7 +56,7 @@ bool Records::removeDoctor(Doctor doctor){
 bool Records::removeSurvey(SurveyResults survey){
 	for (int i = 0; i < activeSurveys.size(); i++){
 		if (survey.getDateTaken().compare(activeSurveys[i].getDateTaken()) == 0){
-			activeSurveys.erase[activeSurveys.begin() + i];
+			activeSurveys.erase(activeSurveys.begin() + i);
 			return 1;
 		}
 	}

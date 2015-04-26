@@ -2,12 +2,13 @@
 //
 
 #include "stdafx.h"
-
+#include "FileIO.h"
 
 int main()
 {
 
-	//TODO
+	readInFiles();
+	std::cin.ignore();
 	return 0;
 }
 

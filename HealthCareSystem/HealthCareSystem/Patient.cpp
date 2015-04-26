@@ -23,15 +23,16 @@ int Patient::getAge()
 
 std::vector<std::string> Patient::getMedConditions(){ return medConditions; }
 
-int Patient::setWeight(int newWeight){ weight = newWeight; }
+void Patient::setWeight(int newWeight){ weight = newWeight; }
 
-int Patient::setHeight(int newHeight){ height = newHeight; }
+void Patient::setHeight(int newHeight){ height = newHeight; }
 
-std::vector<std::string> Patient::setMedConditions(std::vector<std::string> newMedConditions){ medConditions = newMedConditions; }
+void Patient::setMedConditions(std::vector<std::string> newMedConditions){ medConditions = newMedConditions; }
 
 void Patient::setResponses(int* newResponses, std::string newNotes, std::string newDate)
 {
-	responses.push_back(new SurveyResults(newResponses, newNotes, newDate));
+	SurveyResults foo(newResponses, newNotes, newDate);
+	responses.push_back(foo);
 }
 
 std::vector<SurveyResults> Patient::getResults()

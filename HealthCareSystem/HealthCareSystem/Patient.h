@@ -13,9 +13,9 @@ class Patient: public Account
 		int getHeight();
 		int getAge();
 		std::vector<std::string> getMedConditions();
-		int setWeight(int);
-		int setHeight(int);
-		std::vector<std::string> setMedConditions(std::vector<std::string>);
+		void setWeight(int);
+		void setHeight(int);
+		void setMedConditions(std::vector<std::string>);
 		void setResponses(int*, std::string, std::string);
 		std::vector<SurveyResults> getResults();
 

@@ -4,9 +4,6 @@
 #include "stdafx.h"
 
 
-//these vars are to be read in from an xml in the future
-boost::filesystem::path fileReadPath = "C:/HealthCareSystem";
-boost::filesystem::path fileWritePath;
 
 void readInFiles(); 
 
